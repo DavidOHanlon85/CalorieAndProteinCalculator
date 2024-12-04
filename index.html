@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Requirementt Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    />
+    <script src="./functions.js"></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="columns m-1 p-1">
+            <div class="column is-one-quarter">
+                <h5 class="title is-5">Weight (kg):</h5>
+            </div>
+            <div class="column">
+                <input class="input is-success is-rounded" type="text" id="weight" placeholder="Enter your weight in kg">
+            </div>
+        </div>
+
+        <div class="columns m-1 p-1">
+            <div class="column is-one-quarter">
+                <h5 class="title is-5">Height (cm):</h5>
+            </div>
+            <div class="column">
+                <input class="input is-success is-rounded" type="text" id="height" placeholder="Enter your height in cm">
+            </div>
+        </div>
+
+        <div class="columns m-1 p-1">
+            <div class="column is-one-quarter">
+                <h5 class="title is-5">Age (years):</h5>
+            </div>
+            <div class="column">
+                <input class="input is-success is-rounded" type="text" id="age" placeholder="Enter your age">
+            </div>
+        </div>
+
+        <div class="columns m-1 p-1">
+            <div class="column is-one-quarter">
+                <h5 class="title is-5">Sex:</h5>
+            </div>
+            <div class="column">
+                <div class="buttons">
+                    <button class="button" id="male">Male</button>
+                    <button class="button" id="female">Female</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns m-1 p-1">
+            <div class="column is-one-quarter">
+                <h5 class="title is-5">Activity Level</h5>
+            </div>
+            <div class="column">
+                <div class="buttons">
+                    <button class="button" id="sedentary">Sedentary</button>
+                    <button class="button" id="light">Lightly Active</button>
+                    <button class="button" id="moderate">Moderately Active</button>
+                    <button class="button" id="very">Very Active</button>
+                    <button class="button" id="extra">Extra Active</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns m-1 p-1">
+            <div class="column is-one-quarter">
+                <h5 class="title is-5">Goal</h5>
+            </div>
+            <div class="column">
+                <div class="buttons">
+                    <button class="button" id="lose">Lose Weight</button>
+                    <button class="button" id="maintain">Maintain Weight</button>
+                    <button class="button" id="gain">Gain Weight</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns m-1 p-1">
+            <div class="column is-one-quarter">
+                <h5 class="title is-5">Calorie Goal:</h5>
+            </div>
+            <div class="column">
+                <textarea class="textarea" rows="1" id="calories" style="resize:none" disabled></textarea>
+            </div>
+        </div>
+
+        <div class="columns m-1 p-1">
+            <div class="column is-one-quarter">
+                <h5 class="title is-5">Protein Goal</h5>
+            </div>
+            <div class="column">
+                <textarea class="textarea" rows="1" id="protein" style="resize:none" disabled></textarea>
+            </div>
+        </div>
+
+        <div class="columns m-1 p-1">
+            <div class="column is-flex is-justify-content-flex-end">
+                <button id="mybutton" class="button is-success">Give me the stats!</button>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <h1><strong>Calorie Calculator</strong></h1>
+            </div>
+        </footer>
+
+       
+       
+    </div>
+    
+</body>
+</html>
